@@ -18,7 +18,7 @@
     <!-- Navbar Section is here -->
 
     <section>
-        <div class="">
+        <div class="bg-gradient-to-r from-orange-400 ">
             <div class="flex flex-col flex-1 overflow-y-auto">
                 <div class="flex items-center justify-between h-16 py-4">
                     <div class="flex items-center px-4">
@@ -32,7 +32,7 @@
                         <a href="" class="ml-8">Home</a>
                         <a href="" class="ml-8">Help & Contact</a>
                     </div>
-                    <div class="flex items-center pr-4">
+                    <div class="flex items-center pr-4 ">
         
                         <!-- here is the submenu -->
                         
@@ -43,18 +43,18 @@
                             </button>
                             
                             <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute right-3 top-14">
-                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                                <ul class="p-2 text-sm text-gray-700 dark:text-gray-200 " aria-labelledby="dropdownHoverButton">
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Dashboard</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Login</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Settings</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Earnings</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Sell Books</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign out</a>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Book Request</a>
                                     </li>
                                 </ul>
                             </div>
@@ -73,7 +73,7 @@
   <div class="flex h-screen bg-white">
 
     <!-- sidebar -->
-    <div class="hidden md:flex flex-col w-64">
+    <div class="hidden md:flex flex-col w-64 ">
         <div class="py-4 overflow-y-auto ml-2">
             <div>
                 <h1 class="text-2xl font-bold text-center mb-2">Menu's</h1>
@@ -290,7 +290,14 @@
                   </div>
             </div>
          <div class="w-40 mx-auto">
-            <button class="mt-9 text-white bg-[#f59e0b] hover:bg-[#fbbf24] font-medium rounded-lg text-sm px-5 py-2.5 text-center items-center">See more</button>
+            
+            <button class=" mt-12 align-middle bg-[#f59e0b] select-none font-sans font-bold text-center uppercase
+             transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6
+              rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85]
+               active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105
+                hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100 hover:bg-[#fbbf24] text-white"type="button">
+                        See more
+                      </button>
          </div>
          
 
@@ -419,8 +426,19 @@
                       </button>
                     </div>
                   </div>
-            </div>
 
+                  
+            </div>
+            <div class="w-40 mx-auto">
+            
+                <button class=" mt-12 align-middle bg-[#f59e0b] select-none font-sans font-bold text-center uppercase
+                 transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6
+                  rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85]
+                   active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105
+                    hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100 hover:bg-[#fbbf24] text-white"type="button">
+                            See more
+                          </button>
+             </div>
         </div>
       
     </div>
