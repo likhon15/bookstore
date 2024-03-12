@@ -20,15 +20,18 @@
     <section>
         <div class="bg-gradient-to-r from-orange-400 ">
             <div class="flex flex-col flex-1 overflow-y-auto">
+                
                 <div class="flex items-center justify-between h-16 py-4">
+                    <h1 class="lg:text-xl lg:font-bold lg:ml-12"><span class="hidden lg:block">BookStore</span></h1>
                     <div class="flex items-center px-4">
-                        <button class="text-gray-500 focus:outline-none focus:text-gray-700 lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16" />
-                            </svg>
+                        
+
+
+                        <button class="text-white bg-green-500 px-5 py-2 rounded-md hover:bg-green-600 focus:outline-none focus:text-gray-700 lg:hidden" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+                            Menus
                         </button>
+                        
+
                         <a href="" class="ml-8">Home</a>
                         <a href="" class="ml-8">Help & Contact</a>
                     </div>
@@ -45,10 +48,10 @@
                             <div id="dropdownHover" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute right-3 top-14">
                                 <ul class="p-2 text-sm text-gray-700 dark:text-gray-200 " aria-labelledby="dropdownHoverButton">
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Login</a>
+                                        <a href="login.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Login</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
+                                        <a href="registration.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Register</a>
                                     </li>
                                     <li>
                                         <a href="#" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Sell Books</a>
@@ -68,19 +71,19 @@
 
   <section class="">
     <div class="flex flex-row">
-        <div>
+        <div class="">
                 <!-- Banner Area -->
   <div class="flex h-screen bg-white">
 
     <!-- sidebar -->
-    <div class="hidden md:flex flex-col w-64 ">
+    <div id="drawer-navigation" class=" hidden  transition-all duration-300 md:flex flex-col w-64 ">
         <div class="py-4 overflow-y-auto ml-2">
             <div>
                 <h1 class="text-2xl font-bold text-center mb-2">Menu's</h1>
             </div>
             <ul class="space-y-2 font-medium">
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         <span class="flex-1 ms-3 whitespace-nowrap">Politics</span>
                     </a>
@@ -95,24 +98,24 @@
                     </button>
                     <ul id="dropdown-example" class="hidden py-2 space-y-2">
                         <li>
-                            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
+                            <a href="SubCategoryBooks.html" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Products</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
+                            <a href="SubCategoryBooks.html" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Billing</a>
                         </li>
                         <li>
-                            <a href="#" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
+                            <a href="SubCategoryBooks.html" class="flex items-center w-full p-2 text-gray-900 transition duration-75 rounded-lg pl-11 group hover:bg-gray-100 dark:text-white dark:hover:bg-gray-700">Invoice</a>
                         </li>
                     </ul>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         <span class="flex-1 ms-3 whitespace-nowrap">Poems</span>
                     </a>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         
                         <span class="flex-1 ms-3 whitespace-nowrap">Education</span>
@@ -120,28 +123,28 @@
                     </a>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         
                         <span class="flex-1 ms-3 whitespace-nowrap">Law & Justice</span>
                     </a>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         
                         <span class="flex-1 ms-3 whitespace-nowrap">Children</span>
                     </a>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         
                         <span class="flex-1 ms-3 whitespace-nowrap">Medical</span>
                     </a>
                 </li>
                 <li class="bg-white round-md px-4 hover:bg-gray-300 hover:rounded-lg">
-                    <a href="#"
+                    <a href="CategoryBook.html"
                         class="flex items-center p-2 text-gray-900 rounded-lg">
                         <span class="flex-1 ms-3 whitespace-nowrap">Comics</span>
                     </a>
@@ -162,7 +165,7 @@
             <!-- Cards Section need to be here -->
             <h1 class="text-3xl font-bold text-center text-[#fcd34d] mt-12">Latest Books for Sale</h1>
             
-            <div class="grid lg:grid-cols-4 p-6 gap-4 ">
+            <div class="grid justify-center lg:grid-cols-4 p-6 gap-4 ">
                     
 
 
@@ -187,11 +190,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
                   
@@ -217,11 +217,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
 
@@ -246,11 +243,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
                   <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition-all duration-300 hover:-translate-y-1">
@@ -274,11 +268,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
             </div>
@@ -294,7 +285,7 @@
          </div>
          <h1 class="text-3xl font-bold text-center text-[#fcd34d] mt-12">Books request from buyer</h1>
             
-            <div class="grid lg:grid-cols-4 p-6 gap-4 ">
+            <div class="grid justify-center lg:grid-cols-4 p-6 gap-4 ">
                     
 
 
@@ -318,13 +309,8 @@
                         available wireless charging case.
                       </p>
                     </div>
-                    <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
-                    </div>
+                    <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                      type="button">View more</a>
                   </div>
                   
 
@@ -349,11 +335,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
 
@@ -378,11 +361,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
                   <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96 transition-all duration-300 hover:-translate-y-1">
@@ -406,11 +386,8 @@
                       </p>
                     </div>
                     <div class="p-6 pt-0">
-                      <button
-                        class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
-                        type="button">
-                        View more
-                      </button>
+                        <a href="ViewBookId.html" class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg shadow-gray-900/10 hover:shadow-gray-900/20 focus:opacity-[0.85] active:opacity-[0.85] active:shadow-none block w-full bg-blue-gray-900/10 text-blue-gray-900 shadow-none hover:scale-105 hover:shadow-none focus:scale-105 focus:shadow-none active:scale-100"
+                        type="button">View more</a>
                     </div>
                   </div>
 
@@ -587,6 +564,7 @@
 </footer>
    <script src="submenuAccountOpen.js"></script>
    <script src="SubCategory.js"></script>
+   <script src="ToggleDrawer.js"></script>
 </body>
 
 </html>

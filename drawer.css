@@ -1,0 +1,6 @@
+drawer-navigation {
+    height: 100vh; /* Make it full height */
+    width: 300px; /* Adjust width as needed */
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
