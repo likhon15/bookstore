@@ -32,10 +32,39 @@
                         </button>
                         
 
-                        <a href="index.html" class="ml-8">Home</a>
-                        <a href="" class="ml-8">Help & Contact</a>
-                        <a href="membership.html" class="ml-8">membership</a>
-                        <a href="Cart.html" class="ml-8">Cart</a>
+                        <div class="hidden lg:flex">
+                          <a href="index.html" class="ml-8">Home</a>
+                          <a href="" class="ml-8">Help & Contact</a>
+                          <a href="membership.html" class="ml-8">membership</a>
+                          <a href="Cart.html" class="ml-8">Cart</a>
+                          <a href="BookList.html" class="ml-8">BookList</a>
+                         </div>
+  
+                          <div class="ml-4 lg:hidden">
+                              <button id="dropdownHoverButton1" data-dropdown-toggle="dropdownHover1" data-dropdown-trigger="click" class="text-white bg-[#f59e0b] hover:bg-[#fbbf24] 
+                                font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center" type="button">Navbar Options<svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" 
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
+                                  </svg>
+                                  </button>
+                                  
+                                  <div id="dropdownHover1" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 absolute right-60 top-14">
+                                      <ul class="p-2 text-sm text-gray-700 dark:text-gray-200 " aria-labelledby="dropdownHoverButton1">
+                                        <li>
+                                          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Home</a>
+                                      </li>  
+                                        <li>
+                                              <a href="" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Help & contact</a>
+                                          </li>
+                                          <li>
+                                              <a href="membership.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">Membership</a>
+                                          </li>
+                                          <li>
+                                              <a href="BookList.html" class="block px-4 py-2 hover:bg-gray-100 rounded-lg dark:hover:bg-gray-600 dark:hover:text-white">BookList</a>
+                                          </li>
+                                      </ul>
+                                  </div>
+                          </div>
                     </div>
                     <div class="flex items-center pr-4 ">
         
@@ -610,6 +639,7 @@
    <script src="NewBookToggle.js"></script>
    <script src="OldBookToggle.js"></script>
    <script src="ComicsBookToggle.js"></script>
+   <script src="navbarDropDown.js"></script>
 </body>
 
 </html>
